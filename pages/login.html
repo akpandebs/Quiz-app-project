@@ -18,9 +18,19 @@
         </p>
         <div class="form-container">
           <form>
-            <input placeholder="Email- abc@gmail.com" type="text" />
+            <input
+              placeholder="Email- abc@gmail.com"
+              id="email"
+              type="text"
+              required
+            />
             <br />
-            <input type="text" placeholder="Password- *****" />
+            <input
+              type="text"
+              placeholder="Password- *****"
+              id="password"
+              required
+            />
           </form>
           <div class="rem">
             <div class="left">
@@ -30,7 +40,9 @@
             <p>Forgot password?</p>
           </div>
           <div class="button-container">
-            <button class="login">Login</button>
+            <button type="submit" onclick="Login(e)" class="login">
+              Login
+            </button>
             <button class="signup">Signup</button>
           </div>
           <div class="other-login">
@@ -45,5 +57,6 @@
         <img src="../Images/Hands Graduate.png" alt="" />
       </div>
     </div>
+    <script src="../script.js"></script>
   </body>
 </html>
